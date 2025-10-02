@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  & nav ul {
+    display: flex;
+    gap: 50px;
+
+    list-style-type: none;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 12px;
+}
+
+.mtop {
+  margin-top: 12px;
+}
+
+.mbottom {
+  margin-bottom: 12px;
+}
+
+table {
+  width: 200px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mleft {
+  margin-left: 24px;
+}
+
+.music-reader {
+  border: solid 2px black;
+  padding: 24px 12px 0px 12px;
+}
+
+footer {
+  padding-left: 12px;
+}
+
+.stripe {
+  display: flex;
+  align-items: center;
+
+  p {
+    width: fit-content;
+  }
+  & input {
+    display: inline-block;
+  }
+}
+
+#contact {
+  display: flex;
+  gap: 20px;
+}
+
+fieldset {
+  padding: 20px;
+  margin: 10px 0px;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  margin: 0 10px;
+  width: fit-content;
+  padding: 12px 18px;
+  margin-left: 0px;
+  background-color: aliceblue;
+}
+
+#demande {
+  width: 300px;
+  height: fit-20px;
+}
+
+textarea {
+  display: block;
+  margin: 10px 0px;
+  width: 300px;
+  max-width: 400px;
+  height: 200px;
+  max-height: 500px;
+}
+
+.form__radio {
+  display: flex;
+  gap: 20px;
+}
+
+.field-infos {
+  & div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 30px;
+  }
+}
+
+.field-demande {
+  height: fit-content;
+  padding: 10px 12px;
+}
