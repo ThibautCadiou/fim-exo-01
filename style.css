@@ -1,7 +1,17 @@
+@font-face {
+  font-family: tahoma, sans-serif;
+  src: url(./public/fonts/tahoma.ttf);
+}
+@font-face {
+  font-family: cooper, sans-serif;
+  src: url(./public/fonts/cooper.woff);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: tahoma;
 }
 
 header {
@@ -29,6 +39,11 @@ h2,
 h3,
 h4 {
   margin-bottom: 12px;
+}
+
+h1,
+h2 {
+  font-family: cooper;
 }
 
 .mtop {
