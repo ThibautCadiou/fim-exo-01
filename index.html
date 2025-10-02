@@ -7,20 +7,22 @@
     <link rel="shortcut icon" href="/public/favicon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <!-- Pour la production -->
-    <base href="https://thibautcadiou.github.io/fim-exo-01/" />
+    <!-- <base href="https://thibautcadiou.github.io/fim-exo-01/" /> -->
     <title>Fimzeer - la musique qu'il vous faut</title>
   </head>
 
   <body>
     <header>
-      <a href="./index.html"
-        ><img
-          src="./public/img/fimzeer_logo.png"
-          width="200"
-          alt="logo Fimzeer"
-      /></a>
       <nav>
         <ul>
+          <li>
+            <a href="/index.html"
+              ><img
+                src="./public/img/fimzeer_logo.png"
+                width="200"
+                alt="logo Fimzeer"
+            /></a>
+          </li>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./clip.html">Clip</a></li>
           <li><a href="./contact.html">Contact </a></li>
@@ -30,75 +32,81 @@
     <main>
       <h1>Fimzeer</h1>
       <h2>Derniers articles</h2>
-      <h3>Nouvel album de Carpenter Brut</h3>
-      <p>par MB, le 10/01/2025</p>
-      <img
-        width="80%"
-        src="./public/img/carpenter_brut_1.jpg"
-        alt="photo album des carpenter brut "
-      />
-      <p class="mtop mbottom">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facilis
-        error reiciendis perferendis ex, esse facere. Similique eius soluta,
-        minima dignissimos deleniti corporis corrupti doloremque quas optio
-        deserunt possimus voluptates, voluptatibus id voluptas earum beatae aut
-        iusto nobis facere sapiente. Vero exercitationem nam iusto aperiam
-        consequuntur, porro iure officia recusandae.
-      </p>
-      <a href="#" class="mbottom">voir plus &rarr; </a>
-      <h3>Le retour de Big John avec les thèmes perdus</h3>
-      <p>par MB, le 28/09/2025</p>
-      <img
-        width="300"
-        src="./public/img/john_capenter_Lost_themes.jpg"
-        alt="photo de john carpenter "
-      />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sit
-        aperiam ea et molestiae ipsam qui aliquam sapiente voluptate soluta
-        minus. At blanditiis quo sed veritatis ipsam repudiandae aperiam ad.
-      </p>
-      <a href="#" class="mtop mbottom">Voir plus &rarr;</a>
+      <article>
+        <h3>Nouvel album de Carpenter Brut</h3>
+        <p>par MB, le 10/01/2025</p>
+        <img
+          width="80%"
+          src="./public/img/carpenter_brut_1.jpg"
+          alt="photo album des carpenter brut "
+        />
+        <p class="mtop mbottom">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facilis
+          error reiciendis perferendis ex, esse facere. Similique eius soluta,
+          minima dignissimos deleniti corporis corrupti doloremque quas optio
+          deserunt possimus voluptates, voluptatibus id voluptas earum beatae
+          aut iusto nobis facere sapiente. Vero exercitationem nam iusto aperiam
+          consequuntur, porro iure officia recusandae.
+        </p>
+        <a href="#" class="mbottom">voir plus &rarr; </a>
+      </article>
+      <article>
+        <h3>Le retour de Big John avec les thèmes perdus</h3>
+        <p>par MB, le 28/09/2025</p>
+        <img
+          width="300"
+          src="./public/img/john_capenter_Lost_themes.jpg"
+          alt="photo de john carpenter "
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sit
+          aperiam ea et molestiae ipsam qui aliquam sapiente voluptate soluta
+          minus. At blanditiis quo sed veritatis ipsam repudiandae aperiam ad.
+        </p>
+        <a href="#" class="mtop mbottom">Voir plus &rarr;</a>
+      </article>
 
       <h2>Les tarifs</h2>
       <table>
         <tr>
-          <th class="text-center">Libellé</th>
+          <th class="text-center chiant-2">Libellé</th>
           <th class="text-center">Tarifs</th>
         </tr>
         <tr>
-          <td>Abonnement basic</td>
+          <td class="text-center chiant">Abonnement basic</td>
           <td class="text-center">3,00€</td>
         </tr>
         <tr>
-          <td>Abonnement premium</td>
+          <td class="text-center chiant">Abonnement premium</td>
           <td class="text-center">9,00€</td>
         </tr>
       </table>
 
       <h2 class="mtop">Les fonctionnalités</h2>
       <h3>Fonctions</h3>
-      <ul class="mbottom">
-        <li>écoute limitée 2h/jour (compte basic)</li>
-        <li>écoute illimité (compte premium)</li>
-      </ul>
-      <hr class="mbottom" />
-      <ol class="mleft">
-        <li>Tout les artistes</li>
-        <li>Large choix de style</li>
-        <li>Une super plateforme</li>
-      </ol>
+      <div class="features">
+        <ul class="mbottom">
+          <li>écoute limitée 2h/jour (compte basic)</li>
+          <li>écoute illimité (compte premium)</li>
+        </ul>
+        <hr class="mbottom" />
+        <ol class="">
+          <li>Tout les artistes</li>
+          <li>Large choix de style</li>
+          <li>Une super plateforme</li>
+        </ol>
+      </div>
 
       <section class="music-reader mtop mbottom">
-        <h2>Votre musique</h2>
-        <h3>Mick Gordon - Rip & tear</h3>
+        <p class="music-reader__title">Votre musique</p>
+        <p class="music-reader__subtitle">Mick Gordon - Rip & tear</p>
         <figure>
           <audio controls src="./public/music/02_Rip_&_Tear.mp3"></audio>
         </figure>
       </section>
     </main>
-    <footer class="mtop mbottom">
-      <p>&copy; 2025 <a href="https://www.fim.com">FIM</a></p>
+    <footer class="mtop mbottom text-center mbottom-xl">
+      <p class="mbottom">&copy; 2025 <a href="https://www.fim.com">FIM</a></p>
     </footer>
   </body>
 </html>

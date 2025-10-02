@@ -14,17 +14,36 @@
   font-family: tahoma;
 }
 
+body {
+  margin: 0 auto;
+  padding-bottom: 1px;
+  width: 800px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 20px;
 
+  & nav {
+    width: 100%;
+  }
+
   & nav ul {
     display: flex;
-    gap: 50px;
-
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     list-style-type: none;
+  }
+}
+
+nav a {
+  color: blue;
+  text-decoration: none;
+
+  &:active {
+    color: #ef5466;
   }
 }
 
@@ -46,6 +65,19 @@ h2 {
   font-family: cooper;
 }
 
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-decoration: underline #14978d;
+}
+h3 {
+  font-size: 2rem;
+  text-decoration: underline #14978d;
+}
+
 .mtop {
   margin-top: 12px;
 }
@@ -55,7 +87,26 @@ h2 {
 }
 
 table {
-  width: 200px;
+  margin: 0 auto;
+  width: 50%;
+  border-collapse: collapse;
+}
+table,
+th {
+  border: solid 1px gray;
+}
+th {
+  width: 50%;
+}
+
+tr {
+  margin: 10px 0px;
+}
+.chiant {
+  border-right: solid 1px gray;
+}
+.chiant-2 {
+  border-right: none;
 }
 
 .text-center {
@@ -73,6 +124,23 @@ table {
 
 footer {
   padding-left: 12px;
+  color: #4d91de;
+
+  & a {
+    color: #4d91de;
+  }
+}
+
+.music-reader__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.music-reader__subtitle {
+  font-size: 18px;
+  font-weight: 500;
+
+  margin: 12px 0px;
 }
 
 .stripe {
@@ -97,9 +165,31 @@ fieldset {
   margin: 10px 0px;
 }
 
+.mbottom-xl {
+  margin-bottom: 10px;
+}
 input {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.features {
+  margin: 0 auto;
+  width: 50%;
+
+  & ul {
+    width: fit-content;
+    list-style-position: inside;
+  }
+  & ol {
+    width: fit-content;
+    list-style-position: inside;
+  }
+}
+
+hr {
+  width: 100%;
+  margin: 0 auto;
 }
 
 input[type="submit"] {
@@ -141,4 +231,33 @@ textarea {
 .field-demande {
   height: fit-content;
   padding: 10px 12px;
+  margin-bottom: 0;
+}
+
+article {
+  border: solid 1px black;
+  padding: 20px;
+
+  & img {
+    display: inline;
+    max-width: 300px;
+  }
+
+  & p {
+    margin-bottom: 10px;
+  }
+
+  & a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+label[for="ok"] {
+  margin-top: 0;
+}
+
+.cgv {
+  margin-bottom: 10px;
 }

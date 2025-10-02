@@ -5,19 +5,21 @@
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Pour la production -->
-    <base href="https://thibautcadiou.github.io/fim-exo-01/" />
+    <!-- <base href="https://thibautcadiou.github.io/fim-exo-01/" /> -->
     <title>Fimzeer - Contact</title>
   </head>
   <body>
     <header>
-      <a href="/index.html"
-        ><img
-          src="./public/img/fimzeer_logo.png"
-          width="200"
-          alt="logo Fimzeer"
-      /></a>
       <nav>
         <ul>
+          <li>
+            <a href="/index.html"
+              ><img
+                src="./public/img/fimzeer_logo.png"
+                width="200"
+                alt="logo Fimzeer"
+            /></a>
+          </li>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./clip.html">Clip</a></li>
           <li><a href="./contact.html">Contact </a></li>
@@ -173,22 +175,24 @@
         <fieldset class="field-demande">
           <legend>Votre demande</legend>
           <select id="demande" name="demande">
-            <option value="">Sélectionner le motif de la demande</option>
+            <option value="">Sélectionner le type de demande</option>
             <option value="remboursement">Remboursement</option>
             <option value="commande">Commande</option>
           </select>
           <textarea name="text-demande" id="text-demande"></textarea>
         </fieldset>
 
-        <div class="">
+        <div class="cgv">
           <input type="checkbox" id="ok" value="ok" name="ok" />
-          <label for="vehicle1"> Ok avec les CGV ?</label>
+          <label for="ok">
+            J'accepte la politique de confidentialité de Fimzeer</label
+          >
         </div>
 
         <input type="submit" value="Envoyer" />
       </form>
     </main>
-    <footer class="mtop mbottom">
+    <footer class="mtop mbottom text-center">
       <p>&copy; 2025 <a href="https://www.fim.com">FIM</a></p>
     </footer>
   </body>

@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <!-- Pour la production -->
-    <base href="https://thibautcadiou.github.io/fim-exo-01/" />
+    <!-- <base href="https://thibautcadiou.github.io/fim-exo-01/" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clip</title>
   </head>
   <body>
     <header>
-      <a href="/index.html"
-        ><img
-          src="./public/img/fimzeer_logo.png"
-          width="200"
-          alt="logo Fimzeer"
-      /></a>
       <nav>
         <ul>
+          <li>
+            <a href="/index.html"
+              ><img
+                src="./public/img/fimzeer_logo.png"
+                width="200"
+                alt="logo Fimzeer"
+            /></a>
+          </li>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./clip.html">Clip</a></li>
           <li><a href="./contact.html">Contact </a></li>
@@ -34,14 +36,14 @@
       </video>
 
       <section class="music-reader mtop mbottom">
-        <h2>Votre musique</h2>
-        <h3>Mick Gordon - Rip & tear</h3>
+        <p class="music-reader__title">Votre musique</p>
+        <p class="music-reader__subtitle">Mick Gordon - Rip & tear</p>
         <figure>
           <audio controls src="./public/music/02_Rip_&_Tear.mp3"></audio>
         </figure>
       </section>
     </main>
-    <footer class="mtop mbottom">
+    <footer class="mtop mbottom text-center">
       <p>&copy; 2025 <a href="https://www.fim.com">FIM</a></p>
     </footer>
   </body>
